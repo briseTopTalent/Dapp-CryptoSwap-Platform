@@ -1,0 +1,64 @@
+// 
+// _buttons.scss
+// 
+
+button,a {
+  outline: none !important;
+}
+
+
+// Rounded Buttons
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn-dark, .btn-secondary{
+  color: $gray-200 !important;
+}
+
+.btn-outline-light{
+  color: $gray-900;
+}
+
+.btn-wallet {
+  color: $btn-header-secondary;
+}
+
+.btn-darktoggle {
+  background: $dark-toggle-gradient;
+  border-radius: 11px;
+  border: 1px solid #222736;
+  margin-top:23px;
+}
+
+.btn-darktoggle i {
+  padding:3px;
+  font-size: 15px;
+}
+
+.header-white {
+  color:#eceaea;
+}
+
+.light-icon {
+  color:$light-icon;
+}
+
+.dark-icon {
+  color:$dark-icon;
+}
+
+@media only screen
+and (min-width : 300px) and (max-width : 390px) {
+    .btn {
+        padding: 6px;
+        font-size: 0.75rem;
+    }
+
+}
+
+.btn-li {
+    border-radius: 11px;
+    border: 1px solid #ffffff;
+    margin-top: 22px;
+}

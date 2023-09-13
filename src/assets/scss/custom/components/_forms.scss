@@ -1,0 +1,78 @@
+//
+// Forms.scss
+//
+
+
+// checkbox input right
+
+.form-check-right{
+    padding-left: 0;
+    display: inline-block;
+    padding-right: 1.25rem;
+    .form-check-input{
+      right: 0;
+      margin-left: 0;
+    }
+  
+    .form-check-label{
+      display: block;
+    }
+  }
+  
+  
+  .custom-control-right{
+    padding-left: 0;
+    padding-right: 1.5rem;  
+    display: inline-block;
+    .custom-control-label{
+      display: inline-block;
+      &:before, &:after{
+        left: auto;
+        right: -1.5rem;
+      }
+    }
+  
+    .custom-control-input{
+      left: auto;
+    }
+  }
+
+  .custom-control-label::before {
+    background-color: $btn-header-secondary;
+  }
+
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 75%;
+    height: 15px; /* Specified height */
+    background: #32394e;
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 10px;
+  }
+
+  .slider:focus {
+    outline:none;
+  }
+ 
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: url('../../../spartan-coin.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background: url('../../../spartan-coin.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
